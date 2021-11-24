@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOSPITAL MANAGEMENT PORTAL</title>
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="bg-gen header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 logo-set">
+            <a href="home.html"
+              ><img src="img/logo.png" alt="Logo" class="logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Page Section -->
+    <section class="bg-cover mt-5">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-sm-10 text-center">
+            <h1 class="header-text">HOSPITAL MANAGEMENT PORTAL</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="container">
+        <div class="row dashboard text-center">
+          <div class="col-6 log">
+            <div class="h1">
+              <i class="fa fa-user fa-2x text-gen"></i>
+            </div>
+            <div class="bnt">
+              <a
+                href="#"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#loginmodal"
+                ><h3>LOGIN</h3></a
+              >
+            </div>
+          </div>
+          <div class="col-6 log">
+            <div class="h1">
+              <i class="fa fa-user-plus fa-2x text-gen"></i>
+            </div>
+            <div class="bnt">
+              <a
+                href="#"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#signupmodal"
+                ><h3>STAFF SIGNUP</h3></a
+              >
+            </div>
+            <br />
+          </div>
+          <div class="col-12 mt-5 text-center log">
+            <div class="h1">
+              <i class="fa fa-users fa-2x text-gen"></i>
+            </div>
+            <div class="bnt">
+              <a href="#signinmodal" data-bs-toggle="modal" type="button"
+                ><h3>ADMIN/STAFF</h3></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal fade border-0" id="loginmodal">
+      <div class="modal-dialog modal-dialog-centered w-50 m-auto">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>ADMIN LOGIN</h3>
+            <button
+              type="button"
+              class="btn bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa fa-times fa-2x"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="input-group mb-3">
+                <span
+                  class="btn bg-gen"
+                  style="font-size: 1.5rem"
+                  type="button"
+                  id="button-addon1"
+                >
+                  SIDN:
+                </span>
+                <input
+                  type="text"
+                  class="bnt-outline-gen form-control shadow-none"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span
+                  class="btn bg-gen"
+                  style="font-size: 1.5rem"
+                  type="button"
+                  id="button-addon1"
+                >
+                  HMPIN:
+                </span>
+                <input
+                  type="text"
+                  class="bnt-outline-gen form-control border-0"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row d-flex my-4">
+              <div class="col-6 text-right">
+                <div>
+                  <button href="#" class="btn bg-let" style="font-size: 1.5rem">
+                    LOGIN
+                  </button>
+                </div>
+              </div>
+              <div class="col-6 text-left">
+                <div>
+                  &nbsp;
+                  <button
+                    href="#"
+                    class="btn text-gen bnt"
+                    style="font-size: 1.5rem"
+                    type="button"
+                  >
+                    FORGOT HMPIN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNUP MODAL -->
+    <div
+      class="modal fade"
+      id="signupmodal"
+      tabindex="-1"
+      aria-labelledby="signuplabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered w-50 m-auto">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>HM STAFF SIGNUP</h3>
+            <button type="button" class="btn bg-white" data-bs-dismiss="modal">
+              <i class="fa fa-times fa-2x"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="first-name" class="col-form-label"
+                    >First Name:</label
+                  >
+                  <input type="text" class="form-control" id="first-name" />
+                </div>
+                <div class="col-md-6">
+                  <label for="last-name" class="col-form-label"
+                    >Last Name:</label
+                  >
+                  <input type="text" class="form-control" id="last-name" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-4 col-md-3">
+                  <label for="sex" class="col-form-label">Sex</label>
+                  <select class="custom-select form-control" id="sex">
+                    <option selected>Choose...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+                <div class="col-sm-7 col-md-6">
+                  <label for="phone" class="col-form-label"
+                    >Phone Number:</label
+                  >
+                  <input
+                    type="tel"
+                    name="number"
+                    class="form-control"
+                    id="phone"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="email" class="col-form-label"
+                    >Email Address:</label
+                  >
+                  <input
+                    type="emial"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-lg" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-lg">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade border-0" id="signinmodal">
+      <div class="modal-dialog modal-dialog-centered w-50 m-auto">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>ADMIN LOGIN</h3>
+            <button
+              type="button"
+              class="btn bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa fa-times fa-2x"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="input-group mb-3">
+                <span
+                  class="btn bg-gen"
+                  style="font-size: 1.5rem"
+                  type="button"
+                  id="button-addon1"
+                >
+                  SIDN:
+                </span>
+                <input
+                  type="text"
+                  class="bnt-outline-gen form-control shadow-none"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span
+                  class="btn bg-gen"
+                  style="font-size: 1.5rem"
+                  type="button"
+                  id="button-addon1"
+                >
+                  HMPIN:
+                </span>
+                <input
+                  type="text"
+                  class="bnt-outline-gen form-control border-0"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="row d-flex my-4">
+              <div class="col-6 text-right">
+                <div>
+                  <button href="#" class="btn bg-let" style="font-size: 1.5rem">
+                    SIGNIN
+                  </button>
+                </div>
+              </div>
+              <div class="col-6 text-left">
+                <div>
+                  &nbsp;
+                  <button
+                    href="#"
+                    class="btn text-gen bnt"
+                    style="font-size: 1.5rem"
+                    type="button"
+                  >
+                    FORGOT HMPIN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#signupmodal").modal("show");
+
+          setTimeout(function () {
+            $("#signupmodal").modal("hide");
+          }, 2000);
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
