@@ -162,3 +162,8 @@ a h3:hover {
     font-size: 1.5rem;
     margin: 0 0.7rem;
 }
+
+ul.navlink {
+    list-style: none;
+    font-size: 1.5rem !important;
+}
